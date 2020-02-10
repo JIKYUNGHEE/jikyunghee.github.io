@@ -1,6 +1,6 @@
 ---
-layout: page
-description: "첫페이지"
+layout: post
+description: "My first Page"
 subtitle:   "Hello World, Hello Blog"
 date:       2020-02-10 12:07:00
 author:     "gaeng"
