@@ -2,9 +2,30 @@
 title: Gaeng Blog             # title of your website
 SEOTitle: Gaeng Blog          # check out docs for more detail
 description: "Programming Blog"    # ...
+header-img: img/home-bg.jpg
+email: huxpro@gmail.com
 
 # SNS settings      
 github_username: JIKYUNGHEE     # modify this account to yours
 
 # Build settings
 paginate: 10                # nums of posts in one page
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+      
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "sidebar"
+sidebar-avatar: /img/avatar-hux-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
